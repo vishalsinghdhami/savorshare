@@ -1,0 +1,41 @@
+.Hero {
+  height: 80vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/images/hero.avif");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  .content {
+    display: grid;
+    place-items: center;
+    color: white;
+    .subheading {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .heading {
+      font-size: 5rem;
+      font-family: var(--font-heading);
+      font-weight: bold;
+      text-transform: capitalize;
+      max-width: 50rem;
+      text-align: center;
+    }
+    .dateTime {
+      font-size: 1.6rem;
+    }
+    .cta {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.Nav {
+}
+.Contact {
+  .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.4rem;
+  }
+  display: flex;
+  background-color: var(--light-pink);
+  color: var(--red);
+  .Left {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .right {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 0.5rem;
+  }
+}
+.Main {
+  display: flex;
+  font-size: 1.6rem;
+  .Container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .Logo {
+    font-size: 3rem;
+    font-family: var(--font-logo);
+  }
+}
+.NavLinks {
+  display: flex;
+  gap: 2rem;
+}
+.login {
+  margin-left: auto;
+}
+.SearchBar {
+  padding: 0.4rem 1rem;
+  gap: 1rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  &Input {
+    outline: none;
+    background: transparent;
+    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.502);
+
+    &:focus {
+      box-shadow: 0 0.1rem 0 black;
+    }
+  }
+}

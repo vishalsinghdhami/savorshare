@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --light-pink: #ffcccc;
+  --red: #d63031;
+  --font-logo: "Lobster", cursive;
+  --font-heading: "Merriweather", serif;
+}
+.heading {
+  font-size: 5rem;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  text-transform: capitalize;
+  max-width: 50rem;
+  text-align: center;
+}
+.heading.small {
+  font-size: 3rem;
+  text-align: start;
+}
+.about {
+  margin-top: 5rem;
+  display: grid;
+  gap: 3rem;
+  font-size: 1.6rem;
+  width: min(50%, 90rem);
+}
+a {
+  color: black !important;
+  text-decoration: none !important;
+}

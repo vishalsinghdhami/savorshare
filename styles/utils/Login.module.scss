@@ -1,0 +1,36 @@
+.input {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  input {
+    outline: none;
+    font-size: 1.6rem;
+    width: 100%;
+  }
+}
+.main {
+  display: grid;
+  gap: 1rem;
+}
+.signup {
+  max-width: 50rem;
+  .header {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.cta {
+  font-size: 1.6rem;
+  justify-self: start;
+  padding: 1rem;
+}
+.footer {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  font-size: 1.4rem;
+  .highlight {
+    color: var(--red);
+  }
+}
