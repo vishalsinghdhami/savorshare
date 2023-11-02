@@ -60,12 +60,7 @@
   .right {
     max-width: 50rem;
   }
-  .ingredients{
-    display: flex;
-    flex-wrap: wrap;
-    overflow: scroll;
-    max-width: 279px;
-  }
+
   .typeofcuisine {
     border: solid var(--light-pink);
     width: max-content;
@@ -95,5 +90,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+.ingredients{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  max-width: 279px;
 }
 }
