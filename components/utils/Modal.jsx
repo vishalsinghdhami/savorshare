@@ -6,6 +6,7 @@ const MyModal = ({ isOpen, setIsOpen, children }) => {
       backgroundColor: "rgba(0, 0, 0, 0.6)",
     },
     content: {
+      maxWidth:"87vw",
       top: "50%",
       left: "50%",
       right: "auto",

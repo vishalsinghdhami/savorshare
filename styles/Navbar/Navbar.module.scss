@@ -35,6 +35,19 @@
     font-size: 3rem;
     font-family: var(--font-logo);
   }
+  @media screen and (max-width: 700px) {
+    .Container {
+      gap: 2rem;
+    }
+    .Logo {
+      font-size: 2rem;
+    }
+ }
+ @media screen and (max-width: 400px) {
+  .Container {
+    gap: 0.5rem;
+  }
+}
 }
 .NavLinks {
   display: flex;
@@ -58,5 +71,10 @@
     &:focus {
       box-shadow: 0 0.1rem 0 black;
     }
+  }
+}
+@media screen and (max-width: 700px) {
+  .SearchBar {
+    display: none;
   }
 }

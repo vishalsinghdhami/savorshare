@@ -34,6 +34,7 @@ html {
   text-transform: capitalize;
   max-width: 50rem;
   text-align: center;
+  margin-top: 1rem;
 }
 .heading.small {
   font-size: 3rem;

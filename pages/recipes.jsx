@@ -8,6 +8,7 @@ import axios from "axios";
 import Container from "@/components/utils/Container";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { Button } from "react-bootstrap";
+import { FiShare } from "react-icons/fi";
 export default function Recipes({ data }) {
   const [isOpen, setIsOpen] = useState(false);
   const [user, setUser] = useState(null);
@@ -37,7 +38,7 @@ export default function Recipes({ data }) {
       <main>
         {data.map((e) => (
           <>
-            <Container>
+            <Container key={e._id}>
               <div className={styles.recipeCover}>
                 <div className={styles.left}>
                   <img
@@ -65,14 +66,19 @@ export default function Recipes({ data }) {
                     ) : (
                       <></>
                     )}
-                    <Button variant="primary" onClick={(e) => setShow2(!show2)}>
+                    <Button
+                      variant="primary"
+                      style={{ fontSize: 12 }}
+                      onClick={(e) => setShow2(!show2)}
+                    >
                       Show comments
                     </Button>
+                    <FiShare />
                   </div>
                 </div>
                 <div className={styles.right}>
                   <h2 className={styles.heading}>{e.title}</h2>
-                  <p>Ingredients: {e.ingredients}</p>
+                  <p className={styles.ingredients}>Ingredients: {e.ingredients}</p>
                   <div className={styles.row}>
                     <p className={styles.typeofcuisine}>{e.typeofcuisine}</p>
                     <p>{e.mealtype}</p>

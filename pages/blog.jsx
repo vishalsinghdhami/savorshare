@@ -82,7 +82,7 @@ function Blogs() {
   return (
     <div>
       <Button
-        style={{ margin: "2% 2%", backgroundColor: "#d63031" }}
+        style={{ fontSize: 16, margin: "2% 2%", backgroundColor: "#d63031" }}
         variant="secondary"
         onClick={handleShow}
       >
@@ -123,7 +123,7 @@ function Blogs() {
                 }}
               />
               <Button
-                style={{ backgroundColor: "#d63031" }}
+                style={{ backgroundColor: "#d63031", fontSize: 16 }}
                 onClick={uploadFile}
               >
                 {" "}
@@ -134,7 +134,7 @@ function Blogs() {
         </Modal.Body>
         <Modal.Footer>
           <Button
-            style={{ backgroundColor: "#d63031" }}
+            style={{ backgroundColor: "#d63031", fontSize: 16 }}
             variant="secondary"
             onClick={handleClose}
           >
@@ -142,7 +142,7 @@ function Blogs() {
           </Button>
           <Button
             variant="primary"
-            style={{ backgroundColor: "#d63031" }}
+            style={{ backgroundColor: "#d63031", fontSize: 16 }}
             onClick={newblog}
           >
             Save Changes
@@ -168,7 +168,7 @@ function Blogs() {
                     placeholder="add comment"
                   />
                   <Button
-                    style={{ margin: "1% 1%" }}
+                    style={{ margin: "1% 1%", fontSize: 16 }}
                     onClick={(e) => addComment(it._id)}
                   >
                     Add comment
@@ -188,7 +188,11 @@ function Blogs() {
               ) : (
                 <></>
               )}
-              <Button variant="primary" onClick={(e) => setShow2(!show2)}>
+              <Button
+                style={{ fontSize: 16 }}
+                variant="primary"
+                onClick={(e) => setShow2(!show2)}
+              >
                 Show comments
               </Button>
             </Card.Body>

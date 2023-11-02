@@ -97,13 +97,7 @@ function LoginComp({ setType, setIsOpen, message, setMessage, setIsLoggedIn }) {
     </div>
   );
 }
-function SignUpComp({
-  setIsOpen,
-  setType,
-  message,
-  setMessage,
-  setIsLoggedIn,
-}) {
+function SignUpComp({ setIsOpen, setType, setIsLoggedIn }) {
   const [signUpData, setsignUpData] = useState({
     name: "",
     email: "",
@@ -119,6 +113,8 @@ function SignUpComp({
       .post("https://savorshare.onrender.com/auth/signup", signUpData)
       .then(function (response) {
         console.log(response.data);
+        setIsOpen(false);
+        setIsLoggedIn(true);
       })
       .catch(function (error) {
         console.log(error);

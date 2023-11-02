@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "@/styles/Navbar/Navbar.module.scss";
 import SearchBar from "./SearchBar";
 import Cta from "../utils/Cta";
+import Router, { useRouter } from "next/router";
+
 import {
   TiSocialTumbler,
   TiSocialYoutube,
@@ -15,6 +17,8 @@ import { useEffect, useState } from "react";
 import Login from "./Login";
 
 export default function Navbar() {
+  const router = useRouter();
+
   const [isOpen, setIsOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
@@ -34,6 +38,7 @@ export default function Navbar() {
   function handleLogOut() {
     localStorage.removeItem("user");
     setIsLoggedIn(false);
+    router.push("/");
   }
   return (
     <>
